@@ -1,3 +1,13 @@
+
+@font-face {
+    font-family: 'Trevino';
+    src: url('Trevino.woff');
+}  
+
+body{
+    font-family: 'Trevino !important';
+}
+
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
     background-color: black;
@@ -55,7 +65,7 @@
 .card:hover .servicesIcon {
     color: #008000;
 }
-.servicesText:hover {
+.servicesText:hover, .portfolioContent:hover {
     border: 1px solid #008000;
 }
 
@@ -64,14 +74,18 @@
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+.fa-download-cv:hover,.fa-github:hover,.fa-envelope:hover,.fa-linkedin:hover, .fa-twitch:hover, .card-1:hover {
     color: #008000;
 }
 .fab {
     color: #000000;
 }
 /* footer styling */
-#footer {
+#connect {
     background-color: #808080;
     text-align: center;
+}
+
+#about, #portfolio, #services{
+    margin-bottom: 40px;
 }
